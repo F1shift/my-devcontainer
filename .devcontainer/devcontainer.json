@@ -23,6 +23,7 @@
                 "ms-python.isort",
                 "ms-python.python",
                 "ms-vscode-remote.remote-containers",
+                "tomoki1207.pdf",
                 "yzhang.markdown-all-in-one"
             ],
             "settings": {
