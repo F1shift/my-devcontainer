@@ -2,15 +2,17 @@
     "name": "Devcontainer Setup",
     "dockerComposeFile": "docker-compose.yml",
     "service": "dev",
-    "workspaceFolder": "/build-aws-infra-with-AI-demo",
+    "workspaceFolder": "/workspace",
     "remoteUser": "vscode",
     "customizations": {
         "vscode": {
             "extensions": [
                 "amazonwebservices.aws-toolkit-vscode",
                 "bierner.markdown-mermaid",
-                "davidanson.vscode-markdownlint",
+                "dbaeumer.vscode-eslint",
                 "donjayamanne.githistory",
+                "eamodio.gitlens",
+                "esbenp.prettier-vscode",
                 "github.vscode-github-actions",
                 "github.vscode-pull-request-github",
                 "hashicorp.terraform",
@@ -22,7 +24,23 @@
                 "ms-python.python",
                 "ms-vscode-remote.remote-containers",
                 "yzhang.markdown-all-in-one"
-            ]
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": true,
+                },
+                "terminal.integrated.defaultProfile.linux": {
+                    "bash": {
+                        "path": "/bin/bash",
+                        "icon": "terminal-bash"
+                    },
+                    "zsh": {
+                        "path": "/bin/zsh"
+                    }
+                }
+            }
         }
     },
     "features": {
@@ -34,6 +52,7 @@
         "ghcr.io/devcontainers/features/aws-cli:1": {},
         "ghcr.io/devcontainers/features/terraform:1": {
             "version": "1.14.3"
-        }
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {}
     }
 }
