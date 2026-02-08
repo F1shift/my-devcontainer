@@ -1,0 +1,610 @@
+{
+  "general": {
+    "enablePromptCompletion": true,
+    "previewFeatures": true
+  },
+  "mcpServers": {
+    // "awslabs.amazon-bedrock-agentcore-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-bedrock-agentcore-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-kendra-index-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-kendra-index-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-keyspaces-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-keyspaces-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-mq-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-mq-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-neptune-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-neptune-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-qbusiness-anonymous-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-qbusiness-anonymous-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-qindex-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-qindex-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.amazon-sns-sqs-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.amazon-sns-sqs-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aurora-dsql-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aurora-dsql-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.aws-api-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.aws-appsync-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-appsync-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aws-bedrock-custom-model-import-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-bedrock-custom-model-import-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aws-bedrock-data-automation-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-bedrock-data-automation-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aws-dataprocessing-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-dataprocessing-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.aws-diagram-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-diagram-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.aws-documentation-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-documentation-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_DOCUMENTATION_PARTITION": "aws"
+      }
+    },
+    // "awslabs.aws-healthomics-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-healthomics-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aws-iac-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-iac-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.aws-iot-sitewise-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-iot-sitewise-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "aws-knowledge-mcp-server": {
+      "url": "https://knowledge-mcp.global.api.aws",
+      "type": "http"
+    },
+    "awslabs.aws-location-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-location-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.aws-msk-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-msk-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.aws-network-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-network-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.aws-pricing-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-pricing-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.aws-serverless-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-serverless-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.aws-support-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.aws-support-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.bedrock-kb-retrieval-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.bedrock-kb-retrieval-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.billing-cost-management-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.billing-cost-management-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.ccapi-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.ccapi-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.cdk-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cdk-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.cfn-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cfn-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.cloudtrail-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cloudtrail-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.cloudwatch-applicationsignals-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cloudwatch-applicationsignals-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.cloudwatch-appsignals-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cloudwatch-appsignals-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.cloudwatch-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.cloudwatch-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.code-doc-gen-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.code-doc-gen-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.core-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.core-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.cost-explorer-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.cost-explorer-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.document-loader-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.document-loader-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.documentdb-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.documentdb-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.dynamodb-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.dynamodb-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.ecs-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.ecs-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.eks-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.eks-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.elasticache-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.elasticache-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.finch-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.finch-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.frontend-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.frontend-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.git-repo-research-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.git-repo-research-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.healthlake-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.healthlake-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.iam-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.iam-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.lambda-tool-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.lambda-tool-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.memcached-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.memcached-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.mysql-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.mysql-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.nova-canvas-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.nova-canvas-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.openapi-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.openapi-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.postgres-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.postgres-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.prometheus-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.prometheus-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.redshift-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.redshift-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.s3-tables-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.s3-tables-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.sagemaker-ai-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.sagemaker-ai-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.sagemaker-unified-studio-spark-troubleshooting-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.sagemaker-unified-studio-spark-troubleshooting-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.sagemaker-unified-studio-spark-upgrade-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.sagemaker-unified-studio-spark-upgrade-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.stepfunctions-tool-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.stepfunctions-tool-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.syntheticdata-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.syntheticdata-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.terraform-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.terraform-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    // "awslabs.timestream-for-influxdb-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.timestream-for-influxdb-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    // "awslabs.valkey-mcp-server": {
+    //   "command": "uvx",
+    //   "args": [
+    //     "awslabs.valkey-mcp-server@latest"
+    //   ],
+    //   "env": {
+    //     "FASTMCP_LOG_LEVEL": "ERROR"
+    //   }
+    // },
+    "awslabs.well-architected-security-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.well-architected-security-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    }
+  },
+  "experimental": {
+    "skills": true
+  }
+}

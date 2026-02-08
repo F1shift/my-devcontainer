@@ -1,0 +1,13 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/build-aws-infra-with-AI-demo:cached
+      # Enable Docker-in-Docker by mounting the socket
+      - /var/run/docker.sock:/var/run/docker.sock
+    # Allow host name resolution
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    tty: true

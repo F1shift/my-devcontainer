@@ -1,0 +1,8 @@
+description = "指定したディレクトリ配下の「*Zone.Identifier」ファイルを削除する"
+prompt = """
+以下コマンドを実行して、指定したディレクトリ配下の「*Zone.Identifier」ファイルを削除してください。
+
+```bash
+.gemini/commands/delete_zone_identifiers.sh <ディレクトリ>
+```
+"""
